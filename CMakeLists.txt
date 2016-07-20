@@ -72,7 +72,7 @@ message("Build system will fetch and build Bwa-0.7.10")
 message("==================================================================")
 ExternalProject_Add(bwa
         DOWNLOAD_DIR ${CMAKE_CURRENT_SOURCE_DIR}/external/source
-        URL http://dmel.uchicago.edu/~chai/MOJO/external/bwa-0.7.10.tar.bz2
+        URL http://igsb-xfer.opensciencedatacloud.org/WhiteLab/MOJO/external/bwa-0.7.10.tar.bz2
         SOURCE_DIR ${CMAKE_CURRENT_SOURCE_DIR}/external/source/bwa
         INSTALL_DIR ${CMAKE_CURRENT_SOURCE_DIR}/external/bwa
         CONFIGURE_COMMAND ""
@@ -101,7 +101,7 @@ ${CMAKE_CURRENT_SOURCE_DIR}/external/source/bowtie2/bowtie2-inspect-s
 
 ExternalProject_Add(bowtie2
         DOWNLOAD_DIR ${CMAKE_CURRENT_SOURCE_DIR}/external/source
-        URL http://dmel.uchicago.edu/~chai/MOJO/external/bowtie2-2.2.3-source.zip
+        URL http://igsb-xfer.opensciencedatacloud.org/WhiteLab/MOJO/external/bowtie2-2.2.3-source.zip
         SOURCE_DIR ${CMAKE_CURRENT_SOURCE_DIR}/external/source/bowtie2
         INSTALL_DIR ${CMAKE_CURRENT_SOURCE_DIR}/external/bowtie2
         CONFIGURE_COMMAND ""
@@ -124,7 +124,7 @@ set(bamtools_CMAKE_ARGS -DCMAKE_INSTALL_PREFIX=${bamtools_INSTALL_DIR})
 ExternalProject_Add(bamtools
         DOWNLOAD_DIR ${CMAKE_CURRENT_SOURCE_DIR}/external/source
         PREFIX ${BAMTOOLS_ROOT}
-        URL http://dmel.uchicago.edu/~chai/MOJO/external/BamTools.v2.3.0.tar.gz
+        URL http://igsb-xfer.opensciencedatacloud.org/WhiteLab/MOJO/external/BamTools.v2.3.0.tar.gz
         BINARY_DIR ${BAMTOOLS_ROOT}
         INSTALL_DIR ${bamtools_INSTALL_DIR}
         CMAKE_ARGS ${bamtools_CMAKE_ARGS}
@@ -141,7 +141,7 @@ message("Build system will fetch and build Blat")
 message("==================================================================")
 ExternalProject_Add(Blat
         DOWNLOAD_DIR ${CMAKE_CURRENT_SOURCE_DIR}/external/source
-        URL http://dmel.uchicago.edu/~chai/MOJO/external/blatSrc35.tar.gz
+        URL http://igsb-xfer.opensciencedatacloud.org/WhiteLab/MOJO/external/blatSrc35.tar.gz
         SOURCE_DIR ${CMAKE_CURRENT_SOURCE_DIR}/external/source/blat
         INSTALL_DIR ${CMAKE_CURRENT_SOURCE_DIR}/external/blat
         CONFIGURE_COMMAND ""
@@ -161,7 +161,7 @@ ${CMAKE_CURRENT_SOURCE_DIR}/external/source/samtools/samtools
 )
 ExternalProject_Add(samtools
         DOWNLOAD_DIR ${CMAKE_CURRENT_SOURCE_DIR}/external/source
-        URL http://dmel.uchicago.edu/~chai/MOJO/external/samtools-1.0.tar.bz2
+        URL http://igsb-xfer.opensciencedatacloud.org/WhiteLab/MOJO/external/samtools-1.0.tar.bz2
         SOURCE_DIR ${CMAKE_CURRENT_SOURCE_DIR}/external/source/samtools
         INSTALL_DIR ${CMAKE_CURRENT_SOURCE_DIR}/external/samtools
         CONFIGURE_COMMAND ""
@@ -183,7 +183,7 @@ set(zlib_CMAKE_ARGS -DCMAKE_INSTALL_PREFIX=${zlib_INSTALL_DIR})
 ExternalProject_Add(ZLIB
         DOWNLOAD_DIR ${CMAKE_CURRENT_SOURCE_DIR}/external/source
         PREFIX ${ZLIB_ROOT}
-        URL http://dmel.uchicago.edu/~chai/MOJO/external/zlib-1.2.8.tar.gz
+        URL http://igsb-xfer.opensciencedatacloud.org/WhiteLab/MOJO/external/zlib-1.2.8.tar.gz
         BINARY_DIR ${ZLIB_ROOT}
         INSTALL_DIR ${zlib_INSTALL_DIR}
         CMAKE_ARGS ${zlib_CMAKE_ARGS}
@@ -222,7 +222,7 @@ if (NOT Boost_FOUND )
     message("==================================================================")
     ExternalProject_Add(libboost
         DOWNLOAD_DIR ${CMAKE_CURRENT_SOURCE_DIR}/external/source/
-        URL http://dmel.uchicago.edu/~chai/MOJO/external/boost_1_55_0.tar.gz
+        URL http://igsb-xfer.opensciencedatacloud.org/WhiteLab/MOJO/external/boost_1_55_0.tar.gz
         SOURCE_DIR ${CMAKE_CURRENT_SOURCE_DIR}/external/source/boost_1_55_0
         INSTALL_DIR ${CMAKE_CURRENT_SOURCE_DIR}/external/boost_1_55
         CONFIGURE_COMMAND ${CMAKE_CURRENT_SOURCE_DIR}/external/source/boost_1_55_0/bootstrap.sh ${BOOST_CONFIGURE_TOOLSET} --prefix=<INSTALL_DIR>
